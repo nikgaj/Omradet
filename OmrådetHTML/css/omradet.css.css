@@ -1,0 +1,137 @@
+/* styles.css */
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+
+body {
+    font-family: 'Americana', sans-serif; /* Fallback to sans-serif if custom font fails to load */
+}
+
+/* Moved @font-face rule outside any other rules */
+@font-face {
+    font-family: 'Americana';
+    src: url('C:\Users\admin\Desktop\OmrådetHTML\Americana Bold.otf') format('truetype'); /* Added semicolon here */
+    /* Add additional src lines if you have different font weights or styles */
+}
+
+/* Use your custom font */
+.gallery {
+    font-family: 'Americana Bold', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.white-text {
+    color: white;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+#coaches {
+    text-align: center;
+    
+}
+
+.coach {
+    margin-bottom: 20px;
+}
+
+.coach img {
+    width: 200px; /* Justera storlek efter behov */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.coach p {
+    margin-top: 10px;
+}
+
+.coach a {
+    display: block;
+    margin-top: 5px;
+}
+
+.coach p {
+    margin-top: 10px;
+    color: white; /* Ändra textfärgen till vit */
+}
+
+#coaches h2 {
+    color: white; /* Ändra textfärgen till vit */
+}
