@@ -1,0 +1,31 @@
+body{
+    text-decoration: none;
+    background-color: #262626;
+}
+
+.parent{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: auto;
+grid-template-areas: "nav nav nav nav"
+"main main main main"
+"main2 main2 main2 main2"
+"footer footer footer footer";
+margin: 0;
+width: 100%;
+
+
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #353333;
+    grid-area: nav;
+    width: 100%;
+    margin: 0;
+    height: 85px;
+    
+
+
+}
