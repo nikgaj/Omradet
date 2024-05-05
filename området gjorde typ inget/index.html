@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMRÅDET</title>
+    <link rel="stylesheet" href="css/omradet.css.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="white-text header-grid sticky" id="myHeader">
+        <h1 class="logga-vänster">
+            <a href="index.html"><img src="bilder/Området - white (rgb)@4x.png" alt="Mitt MMA-lag logo"></a>
+        </h1>
+        
+    </header>
+
+     <!--<video autoplay muted loop id="background-video">-->
+        <source src="omradetlogga.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="header-info">
+        <h1 class="omradet-text">OMRÅDET</h1>
+        <p class="address">Diagnosvägen 9A, Huddinge</p>
+        <p class="coordinates">59.224160, 17.942810</p>
+
+        <div class="join-button-container">
+            <a href="medlem.html"><button class="join-button">BLI MEDLEM</button></a>
+        </div>
+
+
+    </div>
+
+    <!-- Add a row of three photos -->
+    <div class="photos-row">
+        <img src="bilder/EnDag (2).jpg" alt="Photo 1">
+        <img src="bilder/EnDag (3).jpg" alt="Photo 2">
+        <img src="bilder/EnDag (4).jpg" alt="Photo 3">
+
+    </div>
+
+
+    <div class="header-info2 blur">
+        <h1 class="omradet-text"> <span class="omoss">OM OSS</span></h1>
+        <p class="address">Området IF är en ideell förening som grundades 2015 av människor som bor och är uppvuxna i
+            Flemingsberg men som har sedan 2013 engagerat
+            sig med barn och unga vuxna i området.</p>
+        <p class="coordinates">November 2023 öppnar vi upp en ny mötesplats för området av området. Här kommer det vara
+            regelbundna träningar i brasiliansk jiu-jitsu, thaiboxning,
+            fyspass, läxhjälp, coachning och workshops i både studier, arbete och företagande samt möjligheter till
+            körkortspaket.</p>
+        <p class="coordinates">Området ska bygga broar mellan drömmar och realitet så att alla oavsett bakgrund får
+            möjligheten att utvecklas hela livet.</p>
+            <script>
+
+                $(window).scroll(function(){
+                    $(".header-info2").css("opacity", 0 + $(window).scrollTop() / 250)
+
+                }); 
+                
+                $(window).scroll(function(){
+                    $(".omosss").css("opacity", 0 + $(window).scrollTop() / 125)
+
+                });
+            </script>
+
+
+
+
+
+    </div>
+
+    <div class="photos-row">
+        <img src="bilder/EnDag (1).jpg" alt="Photo 1">
+        <img src="bilder/EnDag (5).jpg" alt="Photo 2">
+        <img src="bilder/EnDag (6).jpg" alt="Photo 3">
+
+    </div>
+
+    <!-- Your other HTML content here -->
+
+</body>
+
+</html>
