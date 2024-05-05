@@ -1,0 +1,125 @@
+/* omradet.css.css */
+
+/* Reset CSS */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Americana', sans-serif; /* Fallback to sans-serif if custom font fails to load */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Use your custom font */
+@font-face {
+    font-family: 'Americana';
+    src: url('C:\Users\admin\Desktop\OmrådetHTML\Americana Bold.otf') format('truetype');
+    /* Add additional src lines if you have different font weights or styles */
+}
+
+.white-text {
+    color: white;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logga-vänster {
+    margin: 0;
+}
+
+.logga-vänster img {
+    height: 50px; /* Justera höjden efter behov */
+}
+
+.header-info {
+    text-align: center;
+    margin-top: 100px; /* Justera marginalen för att placera texten under headern */
+}
+
+.omradet-text {
+    color: white;
+    font-size: 24px; /* Justera textstorlek efter behov */
+}
+
+.address,
+.coordinates {
+    color: white;
+    font-size: 18px; /* Justera textstorlek efter behov */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px; /* Justera sidomarginaler efter behov */
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px); /* Justera höjden efter behov, ta hänsyn till headerhöjden */
+    z-index: -1;
+}
+/* omradet.css.css */
+
+/* Övriga CSS-regler för header-info och knappen */
+.header-info {
+    text-align: center;
+    margin-top: 100px; /* Öka eller minska detta värde för att justera avståndet från headern */
+}
+
+.join-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Justera detta värde för att justera avståndet mellan texten och knappen */
+}
+
+.join-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover {
+    background-color: #555;
+}
