@@ -9,12 +9,26 @@
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="fixed-header.js"></script>
+    <script>
+
+        $(window).scroll(function(){
+            $(".header-info2").css("opacity", 0 + $(window).scrollTop() / 250)
+
+        }); 
+        
+        $(window).scroll(function(){
+            $(".header-info").css("opacity", 2 - $(window).scrollTop() / 250)
+
+        });
+    </script>
+
+   
 </head>
 
 <body>
     <header class="white-text header-grid sticky" id="myHeader">
         <h1 class="logga-vänster">
-            <a href="index.html"><img src="bilder/Området - white (rgb)@4x.png" alt="Mitt MMA-lag logo"></a>
+            <a href="index.html"><img src="bilder/text logga.png" alt="Mitt MMA-lag logo"></a>
         </h1>
         
     </header>
@@ -24,8 +38,8 @@
         Your browser does not support the video tag.
     </video>
 
-    <div class="header-info">
-        <h1 class="omradet-text" id="logga-text">OMRÅDET</h1>
+    <div class="header-info fixedElement">
+        <h1 class="omradet-text" id="logga-text">   </h1>
         <p class="address">Diagnosvägen 9A, Huddinge</p>
         <p class="coordinates">59.224160, 17.942810</p>
 
@@ -35,17 +49,16 @@
 
 
     </div>
-
-    <!-- Add a row of three photos -->
-    <div class="photos-row">
+<br><br><br><br>
+    <!-- Add a row of three photos-->
+      <div class="photos-row">
         <img src="bilder/EnDag (2).jpg" alt="Photo 1">
         <img src="bilder/EnDag (3).jpg" alt="Photo 2">
         <img src="bilder/EnDag (4).jpg" alt="Photo 3">
-
     </div>
 
 
-    <div class="header-info2 blur">
+    <div class="header-info2 blur" id="rad">
         <h1 class="omradet-text"> <span class="omoss">OM OSS</span></h1>
         <p class="address">Området IF är en ideell förening som grundades 2015 av människor som bor och är uppvuxna i
             Flemingsberg men som har sedan 2013 engagerat
@@ -74,8 +87,8 @@
 
 
     </div>
-
-    <div class="photos-row">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="photos-row" id="rad">
         <img src="bilder/EnDag (1).jpg" alt="Photo 1">
         <img src="bilder/EnDag (5).jpg" alt="Photo 2">
         <img src="bilder/EnDag (6).jpg" alt="Photo 3">

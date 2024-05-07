@@ -11,6 +11,9 @@ body {
     padding: 0;
     background-color: #181818;
     font-family: 'Americana', sans-serif; /* Fallback to sans-serif if custom font fails to load */
+    z-index: -5;
+    position: absolute;
+    background-image: url(bilder\TEST.jpg);
 }
 
 a {
@@ -32,7 +35,14 @@ header{
 
     margin: auto;
 
+    
+}
 
+.fixedElement {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: -1;
 }
 .header-grid {
     display: flex;
@@ -67,26 +77,38 @@ header{
 }
 
 .logga-vänster img {
-    height: 50px; /* Justera höjden efter behov */
+    height: 80px; /* Justera höjden efter behov */
 }
 
+.bakgrund{
+    z-index: -6;
+    width: 1900px;
+    height: auto;
+
+
+}
 .header-info {
     text-align: center;
     margin-top: 100px; /* Justera marginalen för att placera texten under headern */
+    position: fixed ;
+    margin-bottom: 200px;
 }
 
-.header-info2 {
+.header-info2{
     text-align: center;
     margin-top: 50px; /* Adjust margin-top as needed */
     width: 50%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the container horizontally */
     opacity: 0;    
+    z-index: 0;
+    position: relative;
 }
 
 .omradet-text {
     color: white;
     font-size: 24px; /* Adjust font-size as needed */
     margin-bottom: 20px; /* Add margin-bottom for spacing */
+    z-index: 0;
 }
 
 .address,
@@ -158,15 +180,17 @@ nav ul li a {
     background-color: #555;
 }
 
-.photos-row {
+.photos-row{
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust margin as needed */
+    margin-top: 200px; /* Adjust margin as needed */
 }
 
+
+
 .photos-row img {
-    width: 450px; /* Adjust width as needed */
-    margin: 0 10px; /* Adjust spacing between photos as needed */
+    width: 33%; /* Adjust width as needed */
+    margin: auto; /* Adjust spacing between photos as needed */
     margin-bottom: 25px
 }
 

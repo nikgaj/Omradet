@@ -15,3 +15,33 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+window.onscroll = function() {funktion()};
+
+var fastna =  document.getElementsByClassName("header-info2");
+var klister = fastna.offsetTop;
+while(1 < 2){
+
+
+
+function funktion(){
+if (klister <= 10 ){
+  document.getElementsByClassName("header-info2").style.position = "absolute";  
+
+
+
+
+}
+
+else{
+document.getElementsByClassName("header-info2").style.position = "relative";
+
+}
+
+console.log(klister);
+
+
+}
+
+}
